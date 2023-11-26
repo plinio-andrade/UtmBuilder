@@ -39,9 +39,9 @@ public class UrlTests
                 new Url(link);
                 Assert.Fail();
             }
-            catch (InvalidUrlException e)
+            catch (InvalidUrlException)
             {
-                Console.WriteLine(e);
+                Assert.IsTrue(true);
             }
         }
         else
